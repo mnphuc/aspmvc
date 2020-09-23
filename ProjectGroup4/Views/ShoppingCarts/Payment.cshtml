@@ -1,0 +1,150 @@
+﻿@using Project.Models.DataMapper;
+@using ProjectGroup4.Models;
+@{
+    ViewBag.Title = "Payment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var _customer = Session["cus"] as Customer;
+    var carts = Session["cart"] as List<ItemCart>;
+}
+
+<!--start-breadcrumbs-->
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs-main">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li class="active">Thanh Toán</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<!--end-breadcrumbs-->
+<!--register-starts-->
+<div class="register">
+    <div class="container">
+        <div class="register-top heading">
+            <h2>Thông Tin Thanh Toán</h2>
+        </div>
+        @if (TempData["msg"] != null)
+        {
+            ResponseMessage res = (ResponseMessage)TempData["msg"];
+            <div class="alert @res.Type">@res.Message</div>
+        }
+        @using (Html.BeginForm())
+        {
+            <div class="register-main">
+                <div class="col-md-6 account-left">
+                    <h3>Thông tin người mua</h3>
+                    <p><b>Họ tên: </b><span class="info_name">@_customer.FullName</span></p>
+                    <p><b>Email: </b><span class="info_email">@_customer.Email</span></p>
+                    <p><b>SĐT: </b><span class="info_phone">@_customer.Phone</span></p>
+
+
+
+                    <h3>Thông tin người nhận</h3>
+                    <label>
+                        <input type="checkbox" onclick="getInfo(this)" name="name" value="" />
+                        Người mua là người nhận
+                    </label>
+                    <input type="hidden" name="CustomerId" id="CustomerId" value="@_customer.CustomerId" />
+                    <input placeholder="FullName" name="FullName" id="FullName" type="text" tabindex="1" required>
+                    <input placeholder="Email" name="Email" id="Email" type="text" tabindex="2" required>
+                    <input placeholder="Phone" name="Phone" id="Phone" type="text" tabindex="3" required>
+                    <input placeholder="Address" name="Address" id="Address" type="text" tabindex="3" required>
+                    <div class="address submit">
+                        <input type="submit" value="Submit">
+                    </div>
+
+                </div>
+                <div class="col-md-6 account-left">
+                    <table class="table">
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Màu</th>
+                            <th>Kích thước</th>
+                            <th>Số lượng</th>
+                            @*<th>giá giảm/Sản phẩm</th>*@
+                            <th style="width:125px">Đơn giá</th>
+                            <th>Thành Tiền</th>
+                        </tr>
+                        @{ double total = 0;
+                            double gg = 0;
+                            double tructra = 0;
+                            double thanhtien = 0;
+
+                        }
+                        @foreach (var item in carts)
+                        {
+                            gg = (item.Product.Discount) * (item.Product.PriceOut) / 100;
+                            tructra = item.Product.PriceOut - gg;
+                            thanhtien = item.Quantity * tructra;
+
+                            <tr>
+                                <td> @item.Product.ProductName</td>
+                                @foreach (var c in ViewBag.Color)
+                                {
+                                    if (c.ColorId == item.ColorId)
+                                    {
+                                        <td>
+                                            @c.ColorName
+                                        </td>
+                                    }
+                                }
+                                @foreach (var s in ViewBag.Size)
+                                {
+                                    if (s.SizeId == item.SizesId)
+                                    {
+                                        <td>
+
+                                            @s.SizeName
+
+
+                                        </td>
+                                    }
+                                }
+                                <td>@item.Quantity</td>
+                                @*<td>@item.Product.Discount%</td>*@
+                                <td>@String.Format("{0:#,##} VNĐ", tructra)</td>
+                                <td>@String.Format("{0:#,##} VNĐ", thanhtien)</td>
+                            </tr>
+                            total += (item.Quantity * tructra);
+                        }
+                        <tr>
+                            <th colspan="6">Tổng tiền</th>
+                            <th>@String.Format("{0:#,##} VNĐ", total)</th>
+                        </tr>
+                    </table>
+                    @*@Html.EditorFor(model => model.Password)*@
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+        }
+    </div>
+</div>
+<!--register-end-->
+@section scripts{
+    <script>
+        function getInfo(input) {
+            if ($(input).is(":checked")) {
+                // Lấy thông tin đưa vào form
+                $("#FullName").val($(".info_name").text());
+                $("#Email").val($(".info_email").text());
+                $("#Phone").val($(".info_phone").text());
+                //$("#Address").val($(".info_address").text());
+                console.log("Checked");
+            } else {
+                $("#FullName").val("");
+                $("#Email").val("");
+                $("#Phone").val("");
+                //$("#Address").val($("");
+                console.log("Uncheck");
+            }
+        }
+
+
+        $(function () {
+            //$("#CodeId")
+        })
+    </script>
+}

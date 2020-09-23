@@ -1,0 +1,11 @@
+﻿</main>
+			<footer>
+				<p>LIÊN HỆ</p>
+				<p>Tòa nhà HTC, 236B & 238 Hoàng Quốc Việt, Bắc Từ Liêm, Hà Nội.</p>
+				<p>Tư Vấn Online: 0968.27.6996 / 024 3755 4010</p>
+				<p>tuyensinh@bachkhoa-aptech.edu.vn</p>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

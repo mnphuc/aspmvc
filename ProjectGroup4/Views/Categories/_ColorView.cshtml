@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Project.Models.DataMapper.Color>
+
+
+
+@foreach (var item in Model)
+   
+{
+   
+    <li><a style="background:@item.background" data-id="@item.ColorId"></a></li>
+}

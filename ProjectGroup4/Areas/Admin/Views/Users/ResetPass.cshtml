@@ -1,0 +1,27 @@
+﻿@using ProjectGroup4.Models;
+@{
+    ViewBag.Title = "ResetPass";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@if (TempData["msg"] != null)
+{
+    ResponseMessage res = (ResponseMessage)TempData["msg"];
+    <div class="alert @res.Type">@res.Message</div>
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        <label for="password">Mật Khẩu Cũ</label>
+        <input type="text" class="form-control" id="password" name="password">
+    </div>
+    <div class="form-group">
+        <label for="passWordNew">Mật Khẩu Mới</label>
+        <input type="password" class="form-control" id="passWordNew" name="passWordNew">
+    </div>
+    <div class="form-group">
+        <label for="passwordCheck">Mật Khẩu Mới</label>
+        <input type="password" class="form-control" id="passwordCheck" name="passwordCheck">
+    </div>
+    <button type="submit" class="btn btn-primary">Đổi Mật Khẩu</button>
+}

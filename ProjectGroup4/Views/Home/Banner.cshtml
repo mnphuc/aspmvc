@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Project.Models.DataMapper.Slider>
+
+@{
+                /**/
+
+                Layout = null;
+}
+
+
+
+
+@foreach (var item in Model.Where(x => x.Status == true).OrderBy(x => x.DisplayNo))
+{
+    <li>
+        <img src="@item.SliderImg" alt="" />
+    </li>
+}
+
+
+}

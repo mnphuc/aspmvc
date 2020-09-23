@@ -1,0 +1,59 @@
+﻿@using ProjectGroup4.Models;
+@{
+    ViewBag.Title = "activeCode";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs-main">
+            <ol class="breadcrumb">
+                <li><a href="/">Trang Chủ</a></li>
+                <li class="active">kích Hoạt Tài Khoản</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h1>Kích hoạt Tài Khoản</h1>
+    <ul class="cart-header clearfix">
+        <li style="width:100%">
+            <span class="name">
+                <h1 style="">Quý Khách Đã Đăng Ký Tài Khoản Thành Công</h1>
+                <h3>Quý Khách Vui lòng kiểm tra email để lấy mã kích hoạt tài khoản của quý khách</h3>
+                <a class="btn btn-danger" onclick="loadCode()">Gửi Lại Mã Kích Hoạt</a>
+            </span>
+            @if (TempData["msg"] != null)
+            {
+                ResponseMessage res = (ResponseMessage)TempData["msg"];
+                <div class="alert @res.Type">@res.Message</div>
+            }
+        </li>
+        <li class="container" style="width:100%; margin-top: 20px">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                <div class="form-group">
+                    <label class="sr-only" for="activeCode">Mã Kích Hoạt</label>
+                    <input type="text" name="activeCode" class="form-control" id="activeCode" placeholder="Mã Kích Hoạt">
+                </div>
+                <button type="submit" class="btn btn-primary">Kích Hoạt</button>
+            }
+        </li>
+    </ul>
+</div>
+
+@section scripts{
+    <script>
+        function loadCode() {
+            $.ajax({
+                url: 'sendCode',
+                type: 'GET',
+                dataType: 'json',
+                success: function (res) {
+                    console.log(res);
+                }
+            })
+    }
+    </script>
+}

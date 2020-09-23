@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Project.Models.DataMapper.Group>
+
+@{
+    ViewBag.Title = "GetGroup";
+}
+
+<h2>Nhóm Quyền</h2>
+
+<p>
+    @Html.ActionLink("Thêm Mới", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>Mã</th>
+        <th>
+            @Html.DisplayNameFor(model => model.GroupName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>@Html.DisplayFor(modelItem => item.GroupId)</td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GroupName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.ActionLink("Sửa", "Edit", new { id=item.GroupId }) |
+            @Html.ActionLink("Xóa", "Delete", new { id=item.GroupId })
+        </td>
+    </tr>
+}
+
+</table>

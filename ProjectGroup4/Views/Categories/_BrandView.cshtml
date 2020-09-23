@@ -1,0 +1,8 @@
+﻿
+@model IEnumerable<Project.Models.DataMapper.Provider>
+
+@foreach (var item in Model.Where(x => x.Status == true))
+{
+    <label class="checkbox"><input type="checkbox" name="checkbox" class="filter_Brand" value="@item.ProviderId" id=@item.ProviderId><i></i>@item.ProviderName</label>
+    
+}

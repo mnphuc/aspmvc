@@ -1,0 +1,110 @@
+﻿@model IEnumerable<Project.Models.DataMapper.Attributes>
+@using ProjectGroup4.Models;
+@{
+    ViewBag.Title = "Thuộc Tính";
+}
+@section plugincss{
+    <link rel="stylesheet" href="~/Areas/Admin/Assets/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+}
+@if (TempData["msg"] != null)
+{
+    ResponseMessage res = (ResponseMessage)TempData["msg"];
+    <div class="alert @res.Type">@res.Message</div>
+}
+<div class="box">
+    <div class="box-header with-border">
+        <h3 class="box-title">Thuộc Tính</h3>
+
+        <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
+                    title="Collapse">
+                <i class="fa fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+    </div>
+    <div class="box-body">
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+        <table id="example1" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>
+                        Tên Kiểu Thuộc Tính
+                    </th>
+                    <th>
+                        Thuộc Tính File
+                    </th>
+                    <th>
+                        Trạng thái
+                    </th>
+                    <th>Hành Động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.AttributeId)</td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AttributeType.TypeName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AttributeName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.AttributeId }) |
+
+                            @Html.ActionLink("Delete", "Delete", new { id = item.AttributeId })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>ID</th>
+                    <th>
+                        Tên Kiểu Thuộc Tính
+                    </th>
+                    <th>
+                        Thuộc Tính File
+                    </th>
+                    <th>
+                        Trạng thái
+                    </th>
+                    <th>Hành Động</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+@section pluginjs{
+    <script src="~/Areas/Admin/Assets/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="~/Areas/Admin/Assets/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <!-- SlimScroll -->
+    <script src="~/Areas/Admin/Assets/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="~/Areas/Admin/Assets/bower_components/fastclick/lib/fastclick.js"></script>
+}
+@section scripts{
+    <script>
+        $(function () {
+            $('#example1').DataTable()
+            $('#example2').DataTable({
+                'paging': true,
+                'lengthChange': false,
+                'searching': false,
+                'ordering': true,
+                'info': true,
+                'autoWidth': false
+            })
+        })
+    </script>
+}

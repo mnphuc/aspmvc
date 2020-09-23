@@ -1,0 +1,81 @@
+﻿@model Project.Models.DataMapper.Users
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="box box-warning">
+    <div class="box-header with-border">
+        <h3 class="box-title">Người Dùng</h3>
+    </div>
+    <div class="box-body">
+        <div>
+            <h4>Users</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+             
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.FullName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.FullName)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Phone)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Phone)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Avatar)
+                </dt>
+
+                <dd>
+                    <img src="@Model.Avatar" alt="@Model.FullName" height="42" width="42">
+                   
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor( model => model.Birthday)
+                </dt>
+
+                <dd>
+                    @String.Format("{0:dd,MM, yyyy}", Model.Birthday)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Gender)
+                </dt>
+
+                <dd>
+                    @if (Model.Gender)
+                    {
+                        <span>Mam</span>
+                    }
+                    else
+                    {
+                        <span>Nữ</span>
+                    }
+                </dd>
+
+               
+
+            </dl>
+        </div>
+        <p>
+            @Html.ActionLink("Đổi Mật Khẩu", "ResetPass") |
+            @Html.ActionLink("Quay Lại", "Index")
+        </p>
+        </div>
+</div>

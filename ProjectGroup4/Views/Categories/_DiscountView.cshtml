@@ -1,0 +1,9 @@
+﻿@model IEnumerable<int>
+
+@foreach (var item in Model)
+{
+
+<label class="radio"><input type="radio" name="radio" id="@item" value="@item"><i></i>@item %</label>
+
+}
+

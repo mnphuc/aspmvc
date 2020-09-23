@@ -1,0 +1,99 @@
+﻿@model Project.Models.DataMapper.Slider
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Slider</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label class="control-label col-md-2" for="SliderName">Tên Slider</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SliderName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SliderName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="SliderName">Ảnh Slider</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SliderImg, new { htmlAttributes = new { @class = "form-control upload_file", @placeholder = "Chọn Ảnh....." } })
+                @Html.ValidationMessageFor(model => model.SliderImg, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="DisplayNo">Hiện Thị</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DisplayNo, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DisplayNo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="CreateDate">Trạng Thái</label>
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.Status)
+                    @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Areas/Admin/Assets/ckfinder/ckfinder.js"></script>
+    <script>
+        $(".upload_file").click(function () {
+            var finder = new CKFinder();
+            var input = $(this);
+            // xử lý sk khi chọn ảnh
+            finder.selectActionFunction = function (url, file, files) {
+                // url: đường dẫn file cuối cùng được chọn
+                // file: là đối tượng file cuối cùng được chọn
+                // files: danh sách các đối tượng file được chọn
+
+                // Kiểm tra input đó up 1 hay nhiều ảnh
+                if (input.data("multiple") == true) {
+                    var urls = "";
+
+                    $.each(files, function () {
+
+                        urls += $(this)[0].url + ";";
+
+                        input.after("<img src='" + $(this)[0].url + "' width='100' />");
+                    })
+                    urls = urls.slice(0, urls.length - 1)
+
+                    input.val(urls);
+                } else {
+                    input.val(url);
+                    input.after("<img src='" + url + "' width='100' />");
+                }
+            }
+
+            finder.popup();
+        })
+    </script>
+}

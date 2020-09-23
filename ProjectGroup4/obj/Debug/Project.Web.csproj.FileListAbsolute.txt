@@ -1,0 +1,384 @@
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\ProjectGroup4.dll.config
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\ProjectGroup4.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\ProjectGroup4.pdb
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\csc.exe
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\csc.exe.config
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\csc.rsp
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\csi.exe
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\csi.exe.config
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\csi.rsp
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.AppContext.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Console.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.Compression.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Claims.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.ValueTuple.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\vbc.exe
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\vbc.exe.config
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\vbc.rsp
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\Antlr3.Runtime.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\CKFinder.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\EntityFramework.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\EntityFramework.SqlServer.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\Newtonsoft.Json.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\Project.BAL.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\Project.Models.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\System.Web.Helpers.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\System.Web.Mvc.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\System.Web.Optimization.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\System.Web.Razor.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\WebGrease.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\Project.BAL.pdb
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\Project.BAL.dll.config
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\Project.Models.pdb
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\Project.Models.dll.config
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\CKFinder.pdb
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\EntityFramework.xml
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\EntityFramework.SqlServer.xml
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\System.Web.Helpers.xml
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\System.Web.Mvc.xml
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\System.Web.Optimization.xml
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\System.Web.Razor.xml
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.xml
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\Newtonsoft.Json.xml
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\Antlr3.Runtime.pdb
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\obj\Debug\Project.Web.csprojAssemblyReference.cache
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\obj\Debug\Project.Web.csproj.CoreCompileInputs.cache
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\obj\Debug\Project.Web.csproj.CopyComplete
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\obj\Debug\ProjectGroup4.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\obj\Debug\ProjectGroup4.pdb
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\PagedList.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\PagedList.Mvc.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\PagedList.xml
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\ProjectGroup4\bin\PagedList.Mvc.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\ProjectGroup4.dll.config
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\ProjectGroup4.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\ProjectGroup4.pdb
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\csc.exe
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\csc.exe.config
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\csc.rsp
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\csi.exe
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\csi.exe.config
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\csi.rsp
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.AppContext.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Console.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.Compression.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Claims.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.ValueTuple.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\vbc.exe
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\vbc.exe.config
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\vbc.rsp
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\CKFinder.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\PagedList.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\PagedList.Mvc.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\Project.BAL.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\Project.Models.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\System.Web.Helpers.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\System.Web.Optimization.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\System.Web.Razor.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\WebGrease.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\Project.BAL.pdb
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\Project.BAL.dll.config
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\Project.Models.pdb
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\Project.Models.dll.config
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\CKFinder.pdb
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\PagedList.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\PagedList.Mvc.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\System.Web.Helpers.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\System.Web.Optimization.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\System.Web.Razor.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\Antlr3.Runtime.pdb
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\obj\Debug\Project.Web.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\obj\Debug\Project.Web.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\obj\Debug\Project.Web.csproj.CopyComplete
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\obj\Debug\ProjectGroup4.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\ProjectGroup4\obj\Debug\ProjectGroup4.pdb
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\ProjectGroup4.dll.config
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\ProjectGroup4.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\ProjectGroup4.pdb
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\csc.exe
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\csc.exe.config
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\csc.rsp
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\csi.exe
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\csi.exe.config
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\csi.rsp
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.AppContext.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Console.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.Compression.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Claims.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.ValueTuple.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\vbc.exe
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\vbc.exe.config
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\vbc.rsp
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\Antlr3.Runtime.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\CKFinder.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\EntityFramework.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\EntityFramework.SqlServer.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\Newtonsoft.Json.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\PagedList.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\PagedList.Mvc.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\Project.BAL.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\Project.Models.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\System.Web.Helpers.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\System.Web.Mvc.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\System.Web.Optimization.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\System.Web.Razor.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\WebGrease.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\Project.BAL.pdb
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\Project.BAL.dll.config
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\Project.Models.pdb
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\Project.Models.dll.config
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\CKFinder.pdb
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\EntityFramework.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\EntityFramework.SqlServer.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\PagedList.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\PagedList.Mvc.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\System.Web.Helpers.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\System.Web.Mvc.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\System.Web.Optimization.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\System.Web.Razor.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\Newtonsoft.Json.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\Antlr3.Runtime.pdb
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\obj\Debug\Project.Web.csprojAssemblyReference.cache
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\obj\Debug\Project.Web.csproj.CoreCompileInputs.cache
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\obj\Debug\Project.Web.csproj.CopyComplete
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\obj\Debug\ProjectGroup4.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\ProjectGroup4\obj\Debug\ProjectGroup4.pdb
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\ProjectGroup4.dll.config
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\ProjectGroup4.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\ProjectGroup4.pdb
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\csc.exe
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\csc.exe.config
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\csc.rsp
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\csi.exe
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\csi.exe.config
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\csi.rsp
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.AppContext.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Collections.Immutable.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Console.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.Compression.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.FileSystem.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.IO.Pipes.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Reflection.Metadata.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.AccessControl.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Claims.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Security.Principal.Windows.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.ValueTuple.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Xml.XPath.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\vbc.exe
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\vbc.exe.config
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\vbc.rsp
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\VBCSCompiler.exe
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\roslyn\VBCSCompiler.exe.config
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\Antlr3.Runtime.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\CKFinder.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\EntityFramework.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\EntityFramework.SqlServer.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\Microsoft.Web.Infrastructure.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\Newtonsoft.Json.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\PagedList.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\PagedList.Mvc.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\Project.BAL.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\Project.Models.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\System.Diagnostics.DiagnosticSource.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\System.Web.Helpers.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\System.Web.Mvc.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\System.Web.Optimization.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\System.Web.Razor.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.Deployment.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.Razor.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\WebGrease.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\Project.BAL.pdb
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\Project.BAL.dll.config
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\Project.Models.pdb
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\Project.Models.dll.config
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\CKFinder.pdb
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\EntityFramework.xml
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\EntityFramework.SqlServer.xml
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\PagedList.xml
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\PagedList.Mvc.xml
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\System.Web.Helpers.xml
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\System.Web.Mvc.xml
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\System.Web.Optimization.xml
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\System.Web.Razor.xml
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.xml
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.Deployment.xml
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\System.Web.WebPages.Razor.xml
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\Newtonsoft.Json.xml
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\Antlr3.Runtime.pdb
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\System.Diagnostics.DiagnosticSource.xml
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\obj\Debug\Project.Web.csprojAssemblyReference.cache
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\obj\Debug\Project.Web.csproj.CoreCompileInputs.cache
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\obj\Debug\Project.Web.csproj.CopyComplete
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\obj\Debug\ProjectGroup4.dll
+D:\ProjectGroup4\ProjectGroup4\ProjectGroup4\obj\Debug\ProjectGroup4.pdb

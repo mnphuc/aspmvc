@@ -1,0 +1,122 @@
+﻿@model IEnumerable<Project.Models.DataMapper.Orders>
+
+@{
+    ViewBag.Title = "Danh sách đơn hàng";
+}
+@section plugincss{
+    <link rel="stylesheet" href="~/Areas/Admin/Assets/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+}
+
+<div class="box">
+    <div class="box-header with-border">
+        <h3 class="box-title">Đơn Hàng</h3>
+
+        <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
+                    title="Collapse">
+                <i class="fa fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+    </div>
+    <div class="box-body">
+        <table id="example1" class="table table-bordered table-striped">
+            <tr>
+                <th>Người mua</th>
+                <th>Người nhận</th>
+                <th>Địa chỉ email</th>
+                <th>SĐT</th>
+                <th>Địa chỉ</th>
+                <th>Ngày tạo</th>
+                <th>Trạng thái</th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Customer.FullName
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FullName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Phone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CreateDate)
+                    </td>
+                    <td>
+                        @switch (item.Status)
+                        {
+                            case 1:
+                                <span class="label label-warning">Đang chờ duyệt</span>
+                                break;
+                            case 2:
+                                <span class="label label-info">Đã duyệt</span>
+                                break;
+                            case 3:
+                                <span class="label label-primary">Đang giao hàng</span>
+                                break;
+                            case 4:
+                                <span class="label label-success">Hoàn thất</span>
+                                break;
+                            case 0:
+                                <span class="label label-danger">Đã hủy</span>
+                                break;
+                            default:
+                                break;
+
+                        }
+                    </td>
+                    <td>
+                        @Html.ActionLink("Chi Tiết", "Details", new { id = item.OrderId })
+
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+    <!-- /.box-body -->
+    <!-- /.box-footer-->
+</div>
+<!-- /.box -->
+@section pluginjs{
+    <script src="~/Areas/Admin/Assets/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="~/Areas/Admin/Assets/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <!-- SlimScroll -->
+    <script src="~/Areas/Admin/Assets/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="~/Areas/Admin/Assets/bower_components/fastclick/lib/fastclick.js"></script>
+
+}
+
+@*<img src="#" style="height: 40px" alt="alternate text" />*@
+@section scripts{
+    <script>
+
+        $(function () {
+            $('#example1').DataTable()
+            $('#example2').DataTable({
+                'paging': true,
+                'lengthChange': false,
+                'searching': false,
+                'ordering': true,
+                'info': true,
+                'autoWidth': false
+            })
+        })
+       
+    </script>
+
+}

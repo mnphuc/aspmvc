@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Project.Models.DataMapper.Category>
+
+<div class="about">
+    <div class="container">
+        <div class="about-top grid-1">
+            @foreach (var Item in Model)
+            {
+   
+                <div class="col-md-4 about-left">
+                    <figure class="effect-bubba">
+                        <img class="img-responsive" src="@Item.FeatureImg" alt="" style="width:380px;height:250px"/>
+                        <figcaption>
+                            <h2>@Item.CategoryName</h2>
+                            <p>@Item.Description</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+            }
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

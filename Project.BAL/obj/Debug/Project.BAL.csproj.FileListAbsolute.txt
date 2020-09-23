@@ -1,0 +1,60 @@
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.BAL\bin\Debug\Project.BAL.dll.config
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.BAL\bin\Debug\Project.BAL.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.BAL\bin\Debug\Project.BAL.pdb
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.BAL\bin\Debug\EntityFramework.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.BAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.BAL\bin\Debug\Project.Models.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.BAL\bin\Debug\Project.Models.pdb
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.BAL\bin\Debug\Project.Models.dll.config
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.BAL\bin\Debug\EntityFramework.xml
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.BAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.csprojAssemblyReference.cache
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.csproj.CoreCompileInputs.cache
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.csproj.CopyComplete
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.pdb
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.BAL\bin\Debug\Project.BAL.dll.config
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.BAL\bin\Debug\Project.BAL.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.BAL\bin\Debug\Project.BAL.pdb
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.BAL\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.BAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.BAL\bin\Debug\Project.Models.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.BAL\bin\Debug\Project.Models.pdb
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.BAL\bin\Debug\Project.Models.dll.config
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.BAL\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.BAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.csproj.CopyComplete
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.pdb
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.BAL\bin\Debug\Project.BAL.dll.config
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.BAL\bin\Debug\Project.BAL.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.BAL\bin\Debug\Project.BAL.pdb
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.BAL\bin\Debug\EntityFramework.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.BAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.BAL\bin\Debug\Project.Models.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.BAL\bin\Debug\Project.Models.pdb
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.BAL\bin\Debug\Project.Models.dll.config
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.BAL\bin\Debug\EntityFramework.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.BAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.csprojAssemblyReference.cache
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.csproj.CoreCompileInputs.cache
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.csproj.CopyComplete
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.pdb
+D:\ProjectGroup4\ProjectGroup4\Project.BAL\bin\Debug\Project.BAL.dll.config
+D:\ProjectGroup4\ProjectGroup4\Project.BAL\bin\Debug\Project.BAL.dll
+D:\ProjectGroup4\ProjectGroup4\Project.BAL\bin\Debug\Project.BAL.pdb
+D:\ProjectGroup4\ProjectGroup4\Project.BAL\bin\Debug\EntityFramework.dll
+D:\ProjectGroup4\ProjectGroup4\Project.BAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\ProjectGroup4\ProjectGroup4\Project.BAL\bin\Debug\Project.Models.dll
+D:\ProjectGroup4\ProjectGroup4\Project.BAL\bin\Debug\Project.Models.pdb
+D:\ProjectGroup4\ProjectGroup4\Project.BAL\bin\Debug\Project.Models.dll.config
+D:\ProjectGroup4\ProjectGroup4\Project.BAL\bin\Debug\EntityFramework.xml
+D:\ProjectGroup4\ProjectGroup4\Project.BAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\ProjectGroup4\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.csprojAssemblyReference.cache
+D:\ProjectGroup4\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.csproj.CoreCompileInputs.cache
+D:\ProjectGroup4\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.csproj.CopyComplete
+D:\ProjectGroup4\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.dll
+D:\ProjectGroup4\ProjectGroup4\Project.BAL\obj\Debug\Project.BAL.pdb

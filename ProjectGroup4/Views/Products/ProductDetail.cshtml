@@ -1,0 +1,226 @@
+﻿@model Project.Models.DataMapper.Product
+@{
+    /**/
+
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+@section css{
+
+    <link rel="stylesheet" href="~/Content/css/flexslider.css" type="text/css" media="screen" />
+}
+<style>
+    .item {
+        align-items: center;
+        display: flex;
+    }
+
+    .text1 {
+        width: 150px;
+        margin: 8px 0px 0px;
+    }
+
+    .text2 {
+        flex: 1;
+        margin: 15px 0px 0px;
+    }
+</style>
+<!--start-breadcrumbs-->
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs-main">
+            <ol class="breadcrumb">
+                <li><a href="@Url.Action("Index","Home")">Trang Chủ</a></li>
+                <li class="active">Chi Tiết Sản Phẩm</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<!--end-breadcrumbs-->
+<!--start-single-->
+<div class="single contact">
+    <div class="container">
+        <div class="single-main">
+
+            <div class="col-md-9 single-main-left">
+                <div class="sngl-top">
+                    <div class="col-md-5 single-top-left">
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li data-thumb="@Model.Images">
+                                    <div class="thumb-image">
+                                        <img src="@Model.Images" data-imagezoom="true" class="img-responsive" alt="" />
+                                    </div>
+                                </li>
+                                @{
+
+                                    var imgs = Model.muti_image.Split(';').Distinct();
+                                }
+                                @foreach (var item in imgs)
+                                {
+                                    <li data-thumb="@item">
+                                        <div class="thumb-image"> <img src="@item" data-imagezoom="true" class="img-responsive" alt="" /> </div>
+                                    </li>
+                                }
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-7 single-top-right">
+                        <div class="single-para simpleCart_shelfItem">
+                            <h2>@Model.ProductName</h2>
+                            <h5 class="item_price">@String.Format("{0:#,##}VND", Model.PriceOut * (100 - Model.Discount) / 100)</h5>
+
+                            @using (Html.BeginForm("AddToCart", "ShoppingCarts", FormMethod.Post))
+                            {
+                                <div class="group">
+                                    @foreach (var item in ViewBag.types)
+                                    {
+
+                                        <div class="item">
+                                            <p class="text1">@item.TypeName: </p>
+
+
+                                            @foreach (var attr in item.Attributes)
+                                            {
+                                                <h4 class="text2" value="@attr.AttributeId">@attr.AttributeName</h4>
+                                            }
+                                        </div>
+
+                                    }
+                                </div>
+
+                                <div class="available">
+                                    <input type="hidden" name="ProductId" value="@Model.ProductId" />
+                                    <ul class="clearfix">
+                                        <li>
+                                            Màu Sắc
+                                            <select name="ColorId" style="margin-left:23px">
+                                                @foreach (var cl in ViewBag.Color)
+                                                {
+                                                    foreach (var item in Model.ProductColors)
+                                                    {
+                                                        if (cl.ColorId == item.ColorId)
+                                                        {
+                                                            <option id="@cl.ColorId" name="@cl.background" value="@cl.ColorId">@cl.ColorName</option>
+
+                                                        }
+                                                    }
+
+                                                }
+                                            </select>
+                                        </li>
+                                        <li class="size-in">
+                                            Kích Thước
+                                            <select name="SizeId" style="margin-left: 5px;">
+                                                @foreach (var s in ViewBag.Size)
+                                                {
+                                                    foreach (var item in Model.ProductSizes)
+                                                    {
+                                                        if (s.SizeId == item.SizeId)
+                                                        {
+                                                            <option id="@s.SizeId" value="@s.SizeId">@s.SizeName</option>
+
+                                                        }
+                                                    }
+
+
+                                                }
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <span> Số lượng</span>
+                                                <div>
+                                                    <input type="number" name="Quantity" min="1" max="@Model.Quantity" value="1" style="margin-left: 45px;border-radius: 20px;text-align: center;width: 70px;" />
+
+                                                </div>
+
+                                            </div>
+
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <input type="submit" class="add-cart item_add" style="border-radius: 20px;height: 45px;background-color: #73B6E1;" value="Thêm Vào Giỏ Hàng" />
+                            }
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+
+                </div>
+
+                <div class="tabs">
+                    <ul class="menu_drop">
+                        <li class="item1">
+                            <a href="#"><img src="~/Content/images/arrow.png" alt="">Mô Tả Chi Tiết</a>
+                            <ul>
+                                <li class="subitem1"><a href="#"><h4>@Model.Description</h4></a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Relationship product-->
+<!--end-single-->
+
+@section scripts{
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--start-menu-->
+    <script>$(document).ready(function () { $(".memenu").memenu(); });</script>
+    <!--dropdown-->
+
+    <script type="text/javascript">
+        $(function () {
+
+            var menu_ul = $('.menu_drop > li > ul'),
+                menu_a = $('.menu_drop > li > a');
+
+            menu_ul.hide();
+
+            menu_a.click(function (e) {
+                e.preventDefault();
+                if (!$(this).hasClass('active')) {
+                    menu_a.removeClass('active');
+                    menu_ul.filter(':visible').slideUp('normal');
+                    $(this).addClass('active').next().stop(true, true).slideDown('normal');
+                } else {
+                    $(this).removeClass('active');
+                    $(this).next().stop(true, true).slideUp('normal');
+                }
+            });
+
+        });
+    </script>
+    <!-- FlexSlider -->
+    <script src="~/Content/js/imagezoom.js"></script>
+    <script defer src="~/Content/js/jquery.flexslider.js"></script>
+
+    <script>
+        // Can also be used with $(document).ready()
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: "thumbnails"
+            });
+        });
+
+
+    </script>
+}
+
+

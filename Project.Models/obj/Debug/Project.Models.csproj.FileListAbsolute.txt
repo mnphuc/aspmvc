@@ -1,0 +1,48 @@
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.Models\bin\Debug\Project.Models.dll.config
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.Models\bin\Debug\Project.Models.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.Models\bin\Debug\Project.Models.pdb
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.Models\bin\Debug\EntityFramework.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.Models\bin\Debug\EntityFramework.xml
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.Models\obj\Debug\Project.Models.csproj.CoreCompileInputs.cache
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.Models\obj\Debug\Project.Models.csproj.CopyComplete
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.Models\obj\Debug\Project.Models.dll
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.Models\obj\Debug\Project.Models.pdb
+C:\Users\Mai Nhan Phuc\Documents\ProjectGroup4\Project.Models\obj\Debug\Project.Models.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.Models\bin\Debug\Project.Models.dll.config
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.Models\bin\Debug\Project.Models.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.Models\bin\Debug\Project.Models.pdb
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.Models\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.Models\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.Models\obj\Debug\Project.Models.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.Models\obj\Debug\Project.Models.csproj.CopyComplete
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.Models\obj\Debug\Project.Models.dll
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.Models\obj\Debug\Project.Models.pdb
+C:\Users\Admin\Desktop\30-09\ProjectGroup4\Project.Models\obj\Debug\Project.Models.csprojAssemblyReference.cache
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.Models\bin\Debug\Project.Models.dll.config
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.Models\bin\Debug\Project.Models.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.Models\bin\Debug\Project.Models.pdb
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.Models\bin\Debug\EntityFramework.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.Models\bin\Debug\EntityFramework.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.Models\obj\Debug\Project.Models.csprojAssemblyReference.cache
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.Models\obj\Debug\Project.Models.csproj.CoreCompileInputs.cache
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.Models\obj\Debug\Project.Models.csproj.CopyComplete
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.Models\obj\Debug\Project.Models.dll
+C:\Users\Mai Nhan Phuc\Downloads\1212\ProjectGroup4\Project.Models\obj\Debug\Project.Models.pdb
+D:\ProjectGroup4\ProjectGroup4\Project.Models\bin\Debug\Project.Models.dll.config
+D:\ProjectGroup4\ProjectGroup4\Project.Models\bin\Debug\Project.Models.dll
+D:\ProjectGroup4\ProjectGroup4\Project.Models\bin\Debug\Project.Models.pdb
+D:\ProjectGroup4\ProjectGroup4\Project.Models\bin\Debug\EntityFramework.dll
+D:\ProjectGroup4\ProjectGroup4\Project.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\ProjectGroup4\ProjectGroup4\Project.Models\bin\Debug\EntityFramework.xml
+D:\ProjectGroup4\ProjectGroup4\Project.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\ProjectGroup4\ProjectGroup4\Project.Models\obj\Debug\Project.Models.csprojAssemblyReference.cache
+D:\ProjectGroup4\ProjectGroup4\Project.Models\obj\Debug\Project.Models.csproj.CoreCompileInputs.cache
+D:\ProjectGroup4\ProjectGroup4\Project.Models\obj\Debug\Project.Models.csproj.CopyComplete
+D:\ProjectGroup4\ProjectGroup4\Project.Models\obj\Debug\Project.Models.dll
+D:\ProjectGroup4\ProjectGroup4\Project.Models\obj\Debug\Project.Models.pdb

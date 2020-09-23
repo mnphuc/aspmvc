@@ -1,0 +1,100 @@
+﻿
+
+@{
+    ViewBag.Title = "Home Page";
+    ViewBag.Ico = "../../Content/images/favicon.ico";
+}
+
+<!--banner-starts-->
+
+<div class="bnr" id="home">
+    <div id="top" class="callbacks_container">
+        <ul class="rslides" id="slider4">
+            @{
+                Html.RenderAction("Banner", "Home");
+
+            }
+
+        </ul>
+    </div>
+    <div class="clearfix"> </div>
+</div>
+<!--banner-ends-->
+<!--about-starts-->
+@{
+    Html.RenderAction("getAbout", "Home");
+}
+<!--about-end-->
+<!--product-starts-->
+<div class="product">
+    <div class="container">
+        <div class="col-md-12 ">
+            <div class="content-heading">
+                <h3 class="title">SẢN PHẨM MỚI</h3>
+                <div class="block-note">Sản phẩm cập nhật trong tuần </div>
+            </div>
+            <div class="product-top ">
+                @*<div class="product-one">*@
+                @{
+
+                    Html.RenderAction("ProductView", "Products");
+                }
+
+
+
+
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="col-md-12">
+                <div class="content-heading">
+                    <h3 class="title">SẢN PHẨM GIẢM GIÁ NHIỀU NHẤT</h3>
+                    <div class="block-note">sản phẩm đang được giảm giá nhiều nhất của cửa hàng</div>
+                </div>
+
+                <div class="product-top">
+                    @{
+                        Html.RenderAction("BestSellProduct", "Products");
+                    }
+
+                </div>
+            </div>
+        </div>
+
+        @*@{
+                Html.RenderAction("AllProduct", "Products");
+            }*@
+
+
+
+    </div>
+    <!--product-end-->
+    @section scripts{
+
+        <!--Slider-Starts-Here-->
+        <script src="/content/js/responsiveslides.min.js"></script>
+        <script>
+            // You can also use "$(window).load(function() {"
+            $(function () {
+                // Slideshow 4
+                $("#slider4").responsiveSlides({
+                    auto: true,
+                    pager: true,
+                    nav: true,
+                    speed: 500,
+                    namespace: "callbacks",
+                    before: function () {
+                        $('.events').append("<li>before event fired.</li>");
+                    },
+                    after: function () {
+                        $('.events').append("<li>after event fired.</li>");
+                    }
+                });
+
+            });
+        </script>
+        <!--End-slider-script-->
+
+    }

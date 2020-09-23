@@ -1,0 +1,201 @@
+﻿@model IEnumerable<ProjectGroup4.Models.ItemCart>
+@using ProjectGroup4.Models;
+@{
+    /**/
+
+    /**/
+
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    double totalMoney = 0;
+}
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs-main">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li class="active">Thanh Toán</li>
+            </ol>
+        </div>
+    </div>
+
+</div>
+<div class="ckeckout">
+    <div class="container">
+        <div class="ckeck-top heading">
+            <h2>THANH TOÁN</h2>
+        </div>
+        <div class="ckeckout-top">
+            <div class="cart-items">
+                <h3>Giỏ Hàng Của Tôi(@Model.Count()) </h3>
+                <div class="in-check ">
+                    <ul class="unit clearfix">
+                        <li style="width:130px"><span></span></li>
+                        <li style="width:200px"><span>Sản Phẩm</span></li>
+                        <li><span>Đơn Giá</span></li>
+                        <li><span>Số Lượng</span></li>
+
+
+                        <li style="width:150px; margin-left: -51px;"> <span>Thành Tiền</span> </li>
+                    </ul>
+
+                    @foreach (var item in Model)
+                    {
+                        var gg = (item.Product.Discount) * (item.Product.PriceOut) / 100;
+                        var tructra = (item.Product.PriceOut) - (gg);
+                        var thanhtien = tructra * item.Quantity;
+
+                        totalMoney += thanhtien;
+                        <ul class="cart-header" data-id="@item.Product.ProductId" data-price="@item.Product.PriceOut" data-discount="@item.Product.Discount" data-colorId="@item.ColorId" data-Sizeid="@item.SizesId">
+
+                            <a href="@Url.Action("DeleteCart","ShoppingCarts",new { ProductId=item.Product.ProductId,SizeId=item.SizesId,ColorId=item.ColorId,Attributes=item.Attributes})" class="close1"></a>
+                            <li class="ring-in">
+                                <a href="#"><img src="@item.Product.Images" class="img-responsive" style="height: 148px;margin-left: 0px;" alt=""></a>
+                            </li>
+                            <li style="margin-left: -159px;width: 267px;">
+                                <div>
+                                    <span class="name" style="width: 150px;">@item.Product.ProductName </span>
+                                </div>
+
+                                <span style="height: 28px;margin-top: 1px;width: 30%;">Màu sắc: </span>
+
+                                @foreach (var c in ViewBag.Color)
+                                {
+                                    if (c.ColorId == item.ColorId)
+                                    {
+                                        <p style="float: right;font-size: 11px;color: #010101;margin: 0;padding-right: 176px;margin-top: -26px;}"> @c.ColorName</p>
+                                    }
+                                }
+                                <span style="height: 33px;margin-top: 1px;width: 30%;">Kích thước: </span>
+                                @foreach (var s in ViewBag.Size)
+                                {
+
+                                    if (s.SizeId == item.SizesId)
+                                    {
+
+                                        <p style="float: right;font-size: 11px;color: #010101;margin: 0;padding-right: 176px;margin-top: -30px;}"> @s.SizeName</p>
+                                    }
+                                }
+
+                            </li>
+                            <li style="margin-left: -70px;">
+                                <span class="cost">@String.Format("{0:#,##} VNĐ", tructra)</span>
+                            </li>
+
+                            <li style="margin-top: -9px;">
+                                <div class="quantity">
+                                    <span>
+                                        <input class="form-control text-center" id="inputQuantity" data-id="@item.Product.ProductId" data-colorid="@item.ColorId" data-Sizeid="@item.SizesId" value="@item.Quantity" min="1" max="@item.Product.Quantity" type="number" style="width: 100px">
+                                    </span>
+                                </div>
+                            </li>
+
+
+                            <li style="float: right; margin-top: -56px; margin-left: 12px;">
+                                <span class="cost totalProduct-@item.Product.ProductId totalByProduct">
+                                    @String.Format("{0:#,##} VNĐ", thanhtien)
+                                </span>
+                            </li>
+                            <div class="clearfix"> </div>
+
+                        </ul>
+                    }
+                    <h2 class="text-right">Tổng tiền: <span class="total_money">@String.Format("{0:#,##} VNĐ", totalMoney)</span></h2>
+                </div>
+            </div>
+        </div>
+        
+            <a href="@Url.Action("Payment")" class="btn btn-primary">Đặt Hàng</a>
+        
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        function formatNumber(nStr, decSeperate, groupSeperate) {
+            nStr += '';
+            x = nStr.split(decSeperate);
+            x1 = x[0];
+            x2 = x.length > 1 ? '.' + x[1] : '';
+            var rgx = /(\d+)(\d{3})/;
+            while (rgx.test(x1)) {
+                x1 = x1.replace(rgx, '$1' + groupSeperate + '$2');
+            }
+            return x1 + x2;
+        }
+        //$('.quantity input').after('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>');
+        $('.quantity').each(function () {
+            var spinner = $(this),
+                input = spinner.find('input[type="number"]'),
+                btnUp = spinner.find('.quantity-up'),
+                btnDown = spinner.find('.quantity-down'),
+                min = input.attr('min'),
+                max = input.attr('max');
+
+            btnUp.click(function () {
+                var oldValue = parseFloat(input.val());
+                if (oldValue >= max) {
+                    var newVal = oldValue;
+                } else {
+                    var newVal = oldValue + 1;
+                }
+                spinner.find("input").val(newVal);
+                spinner.find("input").trigger("change");
+            });
+
+            btnDown.click(function () {
+                var oldValue = parseFloat(input.val());
+                if (oldValue <= min) {
+                    var newVal = oldValue;
+                } else {
+                    var newVal = oldValue - 1;
+                }
+                spinner.find("input").val(newVal);
+                spinner.find("input").trigger("change");
+            });
+            // Xửa lý sk khi thay đổi số lượng
+            input.change(function () {
+                // Lấy tr hiện
+                var ul = $(this).parents("ul");
+                // Lấy id và số lượng sp
+                var _id = ul.data("id");
+                var _price = ul.data("price");
+                var _discount = ul.data("discount");
+                var _qty = $(this).val();
+                var _colorId = ul.data("colorid");
+                var _Sizeid = ul.data("sizeid");
+                var _priceOut = _price * (100 - _discount) / 100;
+                var _total = parseInt(_priceOut) * parseInt(_qty);
+                //var ColorId = $('#inputQuantity').data('colorid');
+                //var SizeId = $('#inputQuantity').data('sizeid');
+                //console.log(SizeId)
+                // console.log(_id + " | " + _price + " | " + _qty);
+                // Gọi ajax update trên server
+
+                $.ajax({
+                    type: "POST",
+                    url: "/ShoppingCarts/UpdateCart",
+                    data: { productId: _id, qty: _qty, ColorId: _colorId, SizeId: _Sizeid },
+                    success: function (res) {
+                        // Update trên client
+                        $('.totalProduct-' + _id).text(formatNumber(_total, '.', ',') + " VNĐ");
+                        //find(".totalProduct").text(_total);
+                        // Update tổng tiền
+                        var _totalMoney = 0;
+                        $('.totalByProduct').each(function () {
+                            console.log("bố đây " + $(this).text())
+                            var val = parseFloat($(this).text());
+                            // var val = parseInt($(this).text());
+                            _totalMoney += val;
+                        })
+                        $(".total_money").text(formatNumber(res.TotalDetail, '.', ',') + " VNĐ");
+                        $('.totalCartTop').text(formatNumber(res.TotalDetail, '.', ',') + " VNĐ");
+                    }
+                })
+            })
+        });
+       
+    </script>
+
+}

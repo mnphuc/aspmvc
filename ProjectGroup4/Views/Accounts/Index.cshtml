@@ -1,0 +1,60 @@
+﻿@model Project.Models.DataMapper.Customer
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs-main">
+            <ol class="breadcrumb">
+                <li><a href="/">Trang Chủ</a></li>
+                <li class="active">Thông Tin Tài Khoản</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="register-top heading" style="padding-top:30px">
+    <h2>Thông Tin Tài Khoản</h2>
+</div >
+
+<div class="box-body  " style="padding-top:30px;padding-bottom:50px">
+    <div class="container">
+        <table class="table table-responsive ">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Email)</th>
+                    
+                    <th> @Html.DisplayNameFor(model => model.FullName)</th>
+                    <th>  @Html.DisplayNameFor(model => model.Phone) </th>
+                    <th>  @Html.DisplayNameFor(model => model.Address) </th>
+                    <th>  @Html.DisplayNameFor(model => model.Gender)</th>
+                    <th>  @Html.DisplayNameFor(model => model.Birthday) </th>
+                    <th>   @Html.DisplayNameFor(model => model.Avartar) </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> @Html.DisplayFor(model => model.Email)</td>
+                   
+                    <td> @Html.DisplayFor(model => model.FullName) </td>
+                    <td> @Html.DisplayFor(model => model.Phone) </td>
+                    <td> @Html.DisplayFor(model => model.Address) </td>
+                    <td>
+                        @Html.DisplayFor(model => model.Gender)
+                    </td>
+                    <td> @Html.DisplayFor(model => model.Birthday) </td>
+                    <td> <img src="~/Content/Upload/imageCus/@Model.Avartar" width="100" /> </td>
+                </tr>
+            </tbody>
+
+        </table>
+        <p style=" color:black;   width: 57px; border: 1px solid;height: 25px;border: radius; border-radius: 20px 20px;text-align: center; background-color:#73B6E1;">
+            @Html.ActionLink("Sửa", "Edit")
+            @*@Html.ActionLink("Back to List", "Index")*@
+        </p>
+
+    </div>
+
+</div>

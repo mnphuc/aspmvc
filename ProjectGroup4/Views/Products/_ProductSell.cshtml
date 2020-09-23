@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Project.Models.DataMapper.Product>
+
+
+
+
+@foreach (var item in Model.Where(x => x.Status == true))
+{
+    <div class="col-md-3  product-left p-left">
+        <div class="product-main simpleCart_shelfItem" style="margin-bottom: 30px; height:392.72px">
+            @*@Html.ActionLink("ProductDetail", "Products", new { id = item.ProductId })*@
+            <a href="@Url.Action("ProductDetail","Products", new { id = item.ProductId })" class="mask"><img class="img-responsive zoom-img" src="@item.Images" alt="" id="@item.ProductId" style="width:125px" /></a>
+            <div class="product-bottom">
+                <div style="height: 35px;width: 100%;margin-left: -17px;">
+                    <h3 style="padding-left: 17px;">@item.ProductName</h3>
+                </div>
+
+                <p>Khám Phá Ngay</p>
+                <h4>
+                    <span class=" item_price" style="text-decoration: line-through; margin-left: 29px;">@String.Format("{0:#,##}VND", item.PriceOut)</span>
+                    <br />
+                    <a class="item_add" href="@Url.Action("Index","Carts")"><i></i></a>
+                    <span class=" item_price">@String.Format("{0:#,##}VND", item.PriceOut * (100 - item.Discount) / 100)</span>
+                </h4>
+            </div>
+            <div class="srch">
+                <span>-@item.Discount%</span>
+            </div>
+        </div>
+    </div>
+}

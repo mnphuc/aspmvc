@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "SuccessPayment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs-main">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Check Out</a></li>
+                <li class="active">Order Success</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <ul class="cart-header clearfix">
+        @*<div class="close1"></div>*@
+            <li class="ring-in">
+                <img src="~/Content/images/Finished.jpg" class="img-responsive" style=" height: 265px;width: 273px;" alt="">
+            </li>
+           
+            <li style="width:100%">
+                <span class="name">
+                    <h1 style="">Quý Khách Đã Đặt Hàng Thành Công</h1>
+                    <h3>Quý Khách Vui lòng kiểm tra email người nhận</h3>
+                    <h2>Cảm ơn quý khách đã sử dụng dịch vụ của chúng tôi!</h2>
+                    <h2>chúng tôi sẽ kiểm tra hàng và giao hàng đến quý khách sớm nhất có thể</h2>
+                </span>
+                <button style="background-color:#50cb14;color:black;border-radius:20px;height:40px">
+                   <a href=" @Url.Action("Index","Home")"><p><b style="color:black">TIẾP TỤC MUA HÀNG</b></p></a>
+                </button>
+            </li>
+              
+                  
+    </ul>
+
+</div>
+<script>
+    setTimeout(function () {
+        window.location.href = "/"; //will redirect to your blog page (an ex: blog.html)
+    }, 3000);
+</script>

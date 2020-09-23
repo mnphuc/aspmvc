@@ -1,0 +1,128 @@
+﻿@model Project.Models.DataMapper.Product
+
+
+@{
+    ViewBag.Title = "Details";
+    var imgs = Model.muti_image.Split(';');
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @*<dt>
+                @Html.DisplayNameFor(model => model.Provider.ProviderName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Provider.ProviderName)
+            </dd>*@
+
+        <dt>
+            Tên Sản Phẩm
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+
+        <dt>
+            Giá Nhập
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PriceIn)
+        </dd>
+
+        <dt>
+            Giá Bán
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PriceOut)
+        </dd>
+
+        <dt>
+            Số Lượng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            Giảm Giá
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discount) %
+        </dd>
+
+        <dt>
+            Ảnh
+        </dt>
+
+        <dd>
+
+            <img src="@Html.DisplayFor(model => model.Images)" style="height: 40px" alt="@Html.DisplayFor(model => model.ProductName)" />
+            
+
+            @foreach (var img in imgs)
+            {
+
+                <img src="@img" style="height:40px" />
+
+            }
+
+
+
+        </dd>
+
+        <dt>
+            Mô tả
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            Ngày Tạo
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+
+        <dt>
+            Link SEO
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MetaLink)
+        </dd>
+
+        <dt>
+            Lượt xem
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CoutView)
+        </dd>
+
+        <dt>
+            Trạng Thái
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

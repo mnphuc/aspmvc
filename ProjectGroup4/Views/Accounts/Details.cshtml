@@ -1,0 +1,151 @@
+﻿@model IEnumerable<Project.Models.DataMapper.Orders>
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs-main">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li class="active">Thông Tin Đơn Hàng</li>
+            </ol>
+        </div>
+    </div>
+</div>
+@if (Model == null)
+{
+    <div class="container">
+        <h1>Bạn Chưa Mua Sản Phẩm Nào</h1>
+    </div>
+}
+
+<style>
+    .mt-20 {
+        margin-top: 20px;
+    }
+</style>
+
+<div class="box-body">
+    <div class="container">
+
+
+        @foreach (var item in Model)
+        {
+            <div class="row " style="padding: 25px 0px;">
+                <div class="col-md-4">
+                    <h3>Thông tin người nhận</h3>
+                    <dl class="dl-horizontal">
+                        <dt>
+                            Người mua
+                        </dt>
+
+                        <dd>
+                            @item.Customer.FullName
+                        </dd>
+
+                        <dt>
+                            Người Nhận
+                        </dt>
+
+                        <dd>
+                            @item.FullName
+                        </dd>
+
+                        <dt>
+                            Email người Nhận
+                        </dt>
+
+                        <dd>
+                            @item.Email
+                        </dd>
+
+                        <dt>
+                            Số điện thoại người nhận
+                        </dt>
+
+                        <dd>
+                            @item.Phone
+                        </dd>
+
+                        <dt>
+                            Địa chỉ nhận hàng
+                        </dt>
+
+                        <dd>
+                            @item.Address
+                        </dd>
+
+                        <dt>
+                            Ngày tạo
+                        </dt>
+
+                        <dd>
+                            @item.CreateDate
+                        </dd>
+
+                        <dt>
+                            Trạng thái đơn hàng
+                        </dt>
+
+                        <dd>
+                            @switch (item.Status)
+                            {
+                                case 1:
+                                    <span class="label label-warning">Đang chờ duyệt</span>
+
+                                    break;
+                                case 2:
+                                    <span class="label label-info">Đã duyệt</span>
+
+                                    break;
+                                case 3:
+                                    <span class="label label-primary">Đang giao hàng</span>
+                                    break;
+                                case 4:
+                                    <span class="label label-success">Hoàn tất</span>
+                                    break;
+                                case 0:
+                                    <span class="label label-danger">Đã hủy</span>
+                                    break;
+                                default:
+                                    break;
+                            }
+                        </dd>
+
+                    </dl>
+                </div>
+                <div class="col-md-7">
+                    <h3>Chi tiết đơn hàng</h3>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+
+                        </tr>
+                        @{ double price = 0;
+                            double gg = 0;
+                            double totalPrice = 0;
+                        }
+                        @foreach (var itemDetail in item.OrderDetails)
+                        {
+
+                            totalPrice += itemDetail.Quantity * itemDetail.Price;
+
+                            <tr>
+                                <td>@itemDetail.Product.ProductName</td>
+                                <td>@itemDetail.Quantity</td>
+                                <td>@String.Format("{0:#,## VNĐ}", itemDetail.Quantity * itemDetail.Price)</td>
+                            </tr>
+                        }
+                        <tr>
+                            <th colspan="2">Tổng tiền</th>
+
+                            <th>@String.Format("{0:#,## VNĐ}", totalPrice)</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        }

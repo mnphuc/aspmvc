@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Project.Models.DataMapper.Size>
+
+
+@foreach (var item in Model)
+{
+<label class="checkbox">
+    <input type="checkbox" name="checkbox" class="filter_Size" value="@item.SizeId" id=@item.SizeId><i></i>@item.SizeName
+</label>
+}
+

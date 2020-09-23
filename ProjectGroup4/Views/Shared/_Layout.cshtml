@@ -1,0 +1,292 @@
+﻿@using Project.Models.DataMapper
+@using ProjectGroup4.Models
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--theme-style-->
+    <link href="/Content/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
+    <link href="~/Content/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+    @RenderSection("css", required: false)
+   
+    <div id="fb-root"></div>
+   
+</head>
+<body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+    (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div style="position:fixed; z-index:9999999; right:10px; bottom:10px;" class="fb-page" data-tabs="messages" data-href="https://www.facebook.com/108033970623492" data-width="250" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"></div>
+    <div class="top-header">
+        <div class="container">
+            <div class="top-header-main">
+                <div class="col-md-6 top-header-left">
+                    <div class="drop">
+
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 top-header-left">
+                    <div class="cart box_1">
+                        <a href="@Url.Action("Index", "ShoppingCarts")">
+                            <div class="total">
+                                @if (Session["cart"] != null)
+                                {
+
+                                    var carts = Session["cart"] as List<ItemCart>;
+                                    double total = 0;
+                                    int count = 0;
+                                    foreach (var item in carts)
+                                    {
+
+                                        var gg = (item.Product.Discount) * (item.Product.PriceOut) / 100;
+                                        var tructra = (item.Product.PriceOut) - (gg);
+                                        var thanhtien = tructra * item.Quantity;
+
+                                        count++;
+                                        total += thanhtien;
+                                    }
+                                    <span class="totalCartTop">@String.Format("{0:#,##} VNĐ", total)</span>
+                                    <p><a href="@Url.Action("Index", "ShoppingCarts")" class="simpleCart_empty">Giỏ Hàng(@count)</a></p>
+
+                                }
+                                else
+                                {
+                                    <span>Trống</span>
+                                }
+
+
+                            </div>
+                            <img src="/Content/images/cart-1.png" alt="" />
+                        </a>
+
+                        <div class="clearfix"> </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 header-right">
+                    @using (Html.BeginForm("Category", "Categories", FormMethod.Get))
+                    {
+                        <div class="search-bar" style="background-color :white;">
+                            <input type="text" value="" name="keyW" placeholder="Tìm Kiếm" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                            <input type="submit" value="">
+                        </div>
+
+                    }
+
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="logo">
+        <a href="@Url.Action("Index", "Home")"><h1>Luxury Watches</h1></a>
+    </div>
+    <div class="header-bottom ">
+        <div class="container">
+            <div class="header">
+                <div class="col-md-8 header-left">
+                    <div class="top-nav">
+                        <ul class="memenu skyblue">
+                            <li class="active">
+                                <a href="@Url.Action("Index", "Home")">Trang Chủ</a>
+                            </li>
+                            <li class="grid">
+                                <a href="@Url.Action("Category", "Categories")">Cửa Hàng</a>
+                            </li>
+
+                            @*@{Html.RenderAction("MainMenu", "Home");
+
+                                }*@
+                            <li class="grid">
+                                <a href="@Url.Action("Contact","Home")">Liên Hệ</a>
+                            </li>
+                            @if (Session["cus"] != null)
+                            {
+
+
+                                var user = (Customer)Session["cus"];
+
+                                <li class="grid" style="float: right;">
+                                    <a href="javascript:void(0 )">@user.FullName</a>
+                                    <div class="mepanel">
+                                        <div class="row">
+                                            <div class="col1 me-one">
+                                                <ul style="    width: 120px;">
+                                                    <li><a href="@Url.Action("Index","Accounts")"><p>Tài Khoản Của Tôi</p></a></li>
+                                                    <li><a href="@Url.Action("Details","Accounts")">Đơn Mua</a></li>
+                                                    <li><a href="@Url.Action("LogOut","Accounts")"><p>Đăng Xuất</p></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            }
+                            else
+                            {
+                                <li class="grid" style="float: right; width:160px">
+                                    <a href="@Url.Action("Login","Accounts")"><p>Đăng Nhập</p></a>
+                                    <div class="mepanel">
+                                        <div class="row">
+                                            <div class="col1 me-one">
+                                                <ul>
+                                                    <li style="width:60px"><a href="@Url.Action("Register","Accounts")"><p>Đăng Ký</p></a></li>
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            }
+
+
+
+
+                        </ul>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+
+                @*<div class="col-md-4 header-right">
+                        <div></div>
+                        <div class="search-bar">
+                            <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                            <input type="submit" value="">
+                        </div>
+                    </div>*@
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+
+    @RenderBody()
+    <div>
+        <div>
+            <div class="information" style="border-top: 1px solid #DEDEDE;">
+                <div class="container" style="padding-top:5px">
+                    <div class="infor-top">
+                        <div class="col-md-3 infor-left">
+                            <h3>Theo Dõi Chúng Tôi</h3>
+                            <ul>
+                                <li><a href="https://facebook.com/"><span class="fb"></span><h6>Facebook</h6></a></li>
+                                @*<li><a href="#"><span class="twit"></span><h6>Twitter</h6></a></li>
+                                    <li><a href="#"><span class="google"></span><h6>Google+</h6></a></li>*@
+                            </ul>
+                        </div>
+                        <div class="col-md-3 infor-left">
+                            <h3>Thông Tin</h3>
+                            <ul>
+                                <li><a href="#"><p>Đặc biệt</p></a></li>
+                                <li><a href="#"><p>Sản Phẩm mới</p></a></li>
+                                <li><a href="#"><p>cửa hàng</p></a></li>
+                                <li><a href="contact.html"><p>Liên Hệ</p></a></li>
+                                <li><a href="#"><p>Sản phẩm bán chạy</p></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 infor-left">
+                            <h3>Tài Khoản Của Tôi</h3>
+                            <ul>
+                                <li><a href="#"><p>Tài Khoản Của Tôi</p></a></li>
+                                <li><a href="#"><p>Lịch Sử Đơn Hàng</p></a></li>
+
+
+                            </ul>
+                        </div>
+                        <div class="col-md-3 infor-left">
+                            <h3>Thông Tin Cửa Hàng</h3>
+                            <h4>
+                                Luxury Watches
+                                <span>72A Nguyễn Trãi</span>
+                                Royal City, Tầng 2, Thượng Đình, Thanh Xuân Hà Nội.
+                            </h4>
+                            <h5>0966229999</h5>
+                            <p><a href="luxurywatches@gmail.com">luxurywatches@gmail.com</a></p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--information-end-->
+        <!--footer-starts-->
+        <div class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="col-md-6 footer-left">
+                      
+                    </div>
+                    <div class="col-md-6 footer-right">
+                        <p>Luxury Watches |Thiết kế bởi  <a href="" target="_blank"></a> </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Load Facebook SDK for JavaScript -->
+    <!--footer-end-->
+    <!--jQuery(necessary for Bootstrap's JavaScript plugins)-->
+    <!--Custom-Theme-files-->
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--start-menu-->
+    <script src="~/Content/js/jquery-1.11.0.min.js"></script>
+    <script src="~/Content/js/notify.min.js"></script>
+    <script src="~/Content/js/simpleCart.min.js"></script>
+
+    <script type="text/javascript" src="~/Content/js/memenu.js"></script>
+    <script>$(document).ready(function () { $(".memenu").memenu(); });</script>
+    <!--dropdown-->
+    <script src="/Content/js/jquery.easydropdown.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .flex-direction-nav {
+            display: none;
+        }
+    </style>
+    @if (TempData["msg"] != null)
+    {
+        ResponseMessage res = (ResponseMessage)TempData["msg"];
+        <div style="display: none" id="mesType">@res.Type</div>
+        <div style="display: none" id="mesMes">@res.Message</div>
+
+    }
+    <script>
+        $( document ).ready(function() {
+            var type = $('#mesType').text();
+            var mes = $('#mesMes').text();
+            
+            if(type != null && mes != null){
+                $.notify(mes, type);
+            }
+        });
+    </script>
+    @RenderSection("scripts", required: false);
+
+</body>
+</html>

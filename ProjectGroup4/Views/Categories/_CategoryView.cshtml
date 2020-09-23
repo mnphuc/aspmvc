@@ -1,0 +1,6 @@
+﻿
+@model IEnumerable<Project.Models.DataMapper.Category>
+@foreach (var item in Model.Where(x => x.ShowHome == true).OrderBy(x => x.DisplayNo))
+{
+    <label class="checkbox"><input type="checkbox" class="filter_category" name="filter_category" value="@item.CategoryId" id="@item.CategoryId"><i></i>@item.CategoryName</label>
+}

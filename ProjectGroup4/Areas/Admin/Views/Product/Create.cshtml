@@ -1,0 +1,274 @@
+﻿@using Project.Models.DataMapper;
+@model Project.Models.DataMapper.Product
+
+@{
+    ViewBag.Title = "Create";
+    var CatPro = ViewBag.CatPro as IEnumerable<Category>;
+    var Color = ViewBag.Color as IEnumerable<Color>;
+    var Size = ViewBag.Size as IEnumerable<Size>;
+    var Attributes = ViewBag.Attribute as IEnumerable<Attributes>;
+    var AttrTypes = ViewBag.AttrTypes as IEnumerable<AttributeType>;
+    var index = 0;
+  
+}
+
+<div class="box box-warning">
+    <div class="box-header with-border">
+        <h3 class="box-title">Sản Phẩm</h3>
+    </div>
+    <!-- /.box-header -->
+    <div class="box-body">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <h4>Thêm Sản Phẩm</h4>
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="ProductName">Tên Sản Phẩm</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.ProductName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.ProductName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="PriceIn">Giá Nhập</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.PriceIn, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.PriceIn, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="PriceOut">Giá Bán</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.PriceOut, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.PriceOut, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Quantity">Số Lượng</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Quantity">Giảm Giá</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Discount, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Discount, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Images">Ảnh</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Images, new { htmlAttributes = new { @class = "form-control upload_file", @placeholder = "Chọn Ảnh....." } })
+                        @Html.ValidationMessageFor(model => model.Images, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="muti_image">Ảnh Chi Tiết</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.muti_image, new { htmlAttributes = new { data_multiple = "true", @class = "form-control upload_file", @placeholder = "Chọn Ảnh....." } })
+                        @Html.ValidationMessageFor(model => model.muti_image, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Description">Mô Tả Sản Phẩm</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="ProviderId">Nhà Cung Cấp</label>
+                    <div class="col-md-10">
+                        @Html.DropDownList("ProviderId", null, htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.ProviderId, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Category">Danh Mục</label>
+                    <div class="col-md-10">
+                        @foreach (var Item in CatPro)
+                        {
+                            <label>
+                                <input type="checkbox" class="CatPro" value="@Item.CategoryId" />
+                                @Item.CategoryName
+                            </label>
+
+                        }
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Color">Màu Sắc</label>
+                    <div class="col-md-10">
+                        @foreach (var _c in Color)
+                        {
+                            <label>
+                                <input type="checkbox" class="ProColor" value="@_c.ColorId" />
+                                @_c.ColorName
+                            </label>
+
+                        }
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Category">Size</label>
+                    <div class="col-md-10 proaddHtml">
+                        @foreach (var _s in Size)
+                        {
+                            <label>
+                                <input type="checkbox" class="ProSize" value="@_s.SizeId" />
+                                @_s.SizeName
+                            </label>
+
+                        }
+                    </div>
+                </div>
+                @foreach (var item in AttrTypes.OrderBy(x => x.OrderBy))
+                {
+                    <div class="form-group">
+                        <label class="control-label col-md-2">@item.TypeName</label>
+                        <div class="col-md-10">
+                            <select class="form-control valid prAttr" aria-invalid="false" name="ProductAttributes[@index].AttributeId">
+                                @foreach (var attr in item.Attributes)
+                                {
+
+                                    <option value="@attr.AttributeId">@attr.AttributeName</option>
+
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    index++;
+                }
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Status">Trạng Thái</label>
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Status)
+                            @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Thêm" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <div>
+        @Html.ActionLink("Trở Lại Danh Sách", "Index")
+    </div>
+</div>
+       
+
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+        <script src="~/Areas/Admin/Assets/ckfinder/ckfinder.js"></script>
+            <script>
+                $(function () {
+                    $(".CatPro").click(function () {
+                        var check = $(this).is(":checked");
+                        var index = 0;
+                        $(".CatPro").each(function (idx, item) {
+                            if ($(this).is(":checked")) {
+                                $(this).attr("name", "CategoryProducts[" + index + "].CategoryId");
+                                index++;
+                            } else {
+                                $(this).attr("name", "");
+                            }
+                        });
+                    });
+                })
+                $(function () {
+                    $(".ProColor").click(function () {
+                        var check = $(this).is(":checked");
+                        var index = 0;
+                        $(".ProColor").each(function (idx, item) {
+                            if ($(this).is(":checked")) {
+                                $(".ProColor").html('<input type="text" value="" placeholder="Giá Thêm" class="btn btn-default" />');
+                                $(this).attr("name", "ProductColors[" + index + "].ColorId");
+                                index++;
+                            } else {
+                                $(this).attr("name", "");
+                            }
+                        });
+                    });
+                })
+                $(function () {
+                    $(".ProSize").click(function () {
+                        var index = 0;
+                        $(".ProSize").each(function () {
+                            if ($(this).is(":checked")) {
+                                $(this).attr("name", "ProductSizes[" + index + "].SizeId");
+                                index++;
+                            } else {
+                                $(this).attr("name", "");
+                            }
+                        });
+                    });
+                })
+                $(".upload_file").click(function () {
+                    var finder = new CKFinder();
+                    var input = $(this);
+                    // xử lý sk khi chọn ảnh
+                    finder.selectActionFunction = function (url, file, files) {
+                        // url: đường dẫn file cuối cùng được chọn
+                        // file: là đối tượng file cuối cùng được chọn
+                        // files: danh sách các đối tượng file được chọn
+
+                        // Kiểm tra input đó up 1 hay nhiều ảnh
+                        if (input.data("multiple") == true) {
+                            var urls = "";
+                          
+                            $.each(files, function () {
+                                
+                                urls += $(this)[0].url + ";";
+                                
+                                input.after("<img src='" + $(this)[0].url + "' width='100' />");
+                            })
+                            urls = urls.slice(0, urls.length - 1)
+                            
+                            input.val(urls);
+                        } else {
+                            input.val(url);
+                            input.after("<img src='" + url + "' width='100' />");
+                        }
+                    }
+
+                    finder.popup();
+                })
+
+
+                @*$(function () {
+                    $(".prAttr").click(function () {
+                        var check = $(this).is(":Selected");
+                        var index = 0;
+                        $(".prAttr").each(function (idx, item) {
+                            if ($(this).is(":Selected")) {
+                                $(this).attr("name", "ProductAttributes[@index].AttributeId");
+                                index++;
+                            } else {
+                                $(this).attr("name", "");
+                            }
+                        });
+                    });
+                })*@
+            </script>
+
+
+        }

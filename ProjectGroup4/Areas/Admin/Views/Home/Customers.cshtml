@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Project.Models.DataMapper.Customer>
+
+@{
+    ViewBag.Title = "Customers";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Khách Hàng</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+           Email
+        </th>
+        <th>
+            Mật Khẩu
+        </th>
+        <th>
+           Họ Tên
+        </th>
+        <th>
+           Số Điện Thoại
+        </th>
+        <th>
+            Địa Chỉ
+        </th>
+        <th>
+           Giới Tính
+        </th>
+        <th>
+           Ngày Sinh
+        </th>
+        <th>
+           Ảnh Đại Diện
+        </th>
+        <th>
+            Thời Gian Tạo
+        </th>
+        <th>
+           Thời Gian Cập Nhật
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Birthday)
+        </td>
+        <td>
+            <img src="~/Content/Upload/imageCus/@item.Avartar" width="100" />
+            @*@Html.DisplayFor(modelItem => item.Avartar)*@
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreateDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Update_at)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+       
+    </tr>
+}
+
+</table>

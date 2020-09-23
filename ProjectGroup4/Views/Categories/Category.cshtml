@@ -1,0 +1,257 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+
+@model IPagedList<Project.Models.DataMapper.Product>
+@{
+    /**/
+
+    ViewBag.Title = "Category";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<!--start-breadcrumbs-->
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs-main">
+            <ol class="breadcrumb">
+                <li><a href="@Url.Action("Index","Home")">Trang Chủ</a></li>
+                <li class="active">Sản Phẩm Theo Danh Mục</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<!--end-breadcrumbs-->
+<!--prdt-starts-->
+<div class="prdt">
+    <div class="container">
+        <div class="prdt-top">
+            <div class="col-md-9 prdt-left">
+                <div class="content-heading" style="padding-left: 90px;">
+                    <h3 class="title">SẢN PHẨM THEO DANH MỤC</h3>
+                    <div class="block-note">Sản phẩm ấn tượng của cửa hàng </div>
+                </div>
+                <div class="latestproducts">
+                    @{
+                        Html.RenderAction("ProductCategory", "Categories");
+
+                    }
+                </div>
+
+
+
+
+            </div>
+
+            <!--Category-->
+            <div class="col-md-3 prdt-right">
+                <div class="w_sidebar">
+                    <section class="sky-form">
+                        <h4>Danh Mục</h4>
+                        <div class="row1 scroll-pane">
+                            <label class="checkbox">
+                                <input type="checkbox" value="" class="filter_category" data-type="all" name="checkbox" checked=""><i></i>Tất Cả
+                            </label>
+                            @{
+                                Html.RenderAction("CategoryView", "Categories");
+                            }
+                        </div>
+                    </section>
+                    <section class="sky-form">
+                        <h4>THƯƠNG HIỆU</h4>
+                        <div class="row1 row2 scroll-pane">
+                            <div class="col col-4">
+
+
+                                @{
+                                    Html.RenderAction("BrandView", "Categories");
+
+                                }
+                            </div>
+                        </div>
+                    </section>
+                    <section class="sky-form">
+                        <h4>MÀU SẮC</h4>
+                        <ul class="w_nav2 filter_Coler ">
+                            @{
+
+                                Html.RenderAction("ColorView", "Categories");
+                            }
+
+                        </ul>
+                    </section>
+                    <section class="sky-form">
+                        <h4>KÍCH THƯỚC</h4>
+                        <div class="row1 row2 scroll-pane">
+                            <div class="col col-4 ">
+
+                                @*<label class="checkbox">
+                                    <input type="checkbox" value="" class="filter_Size" data-type="" name="checkbox" checked=""><i></i>choice of Brand
+
+                                </label>*@
+                                @{
+
+                                    Html.RenderAction("SizeView", "Categories");
+                                }
+                            </div>
+                        </div>
+                    </section>
+                    <section class="sky-form">
+                        <h4>GIẢM GIÁ</h4>
+                        <div class="row1 row2 scroll-pane">
+                            <div class="col col-4 filter_discount">
+                                @{
+
+                                    Html.RenderAction("DiscountView", "Categories");
+                                }
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+    
+</div>
+<style>
+    .active_color {
+        border: 2px solid;
+    }
+</style>
+<!--product-end-->
+@section scripts{
+    <script>
+        $(function () {
+            $(".filter_category").click(function () {
+                var cats = "";
+                if ($(this).data("type")) {
+                    $(".filter_category").prop("checked", false);
+                    $(this).prop("checked", true).siblings();
+                } else {
+                    $(".filter_category[data-type='all']").prop("checked", false);
+                }
+                $(".filter_category").each(function () {
+                    if ($(this).is(":checked")) {
+                        cats += $(this).val() + ",";
+                    }
+                })
+                cats = cats.substr(0, cats.length - 1);
+
+                $.ajax({
+                    type: "GET",
+                    url: "/Categories/ProductCategory",
+                    data: { catId: cats },
+                    success: function (res) {
+                        $(".latestproducts").html(res);
+                    }
+                })
+            })
+        })
+
+        //  ProductBrand
+        $(function () {
+            $(".filter_Brand").change(function () {
+                var brands = "";
+                if ($(this).data("type")) {
+                    $(".filter_Brand").prop("checked", false);
+                    $(this).prop("checked", true).siblings();
+                } else {
+
+
+
+                }
+                $(this).parent().siblings().find("input").prop("checked", false);
+
+
+
+                brands = $(this).val();
+
+                console.log(brands)
+                $.ajax({
+                    type: "GET",
+                    url: "/Categories/BrandCategory",
+                    data: { providerId: brands },
+                    success: function (res) {
+                        $(".latestproducts").html(res);
+                    }
+                })
+            })
+        })
+        //  ProductSize
+        $(function () {
+            $(".filter_Size").change(function () {
+                var sizes = "";
+                if ($(this).data("type")) {
+                    $(".filter_Size").prop("checked", false);
+                    $(this).prop("checked", true).siblings();
+                } else {
+                }
+                $(this).parent().siblings().find("input").prop("checked", false);
+                sizes = $(this).val();
+
+                //ajax
+                $.ajax({
+                    type: "GET",
+                    url: "/Categories/SizeCategory",
+                    data: { SizeId: sizes },
+                    success: function (res) {
+                        $(".latestproducts").html(res);
+                    }
+                })
+            })
+        })
+        $(function () {
+            $(".filter_discount label input").click(function () {
+
+
+
+                var discount = $(this).val();
+                console.log(discount)
+                var color = $(this).data("id");
+
+
+                //ajax
+                $.ajax({
+                    type: "GET",
+                    url: "/Categories/DiscountCategory",
+                    data: { Discount: discount },
+                    success: function (res) {
+                        $(".latestproducts").html(res);
+                    }
+                })
+            })
+        })
+
+        $(function () {
+            $(".filter_Coler li a").click(function () {
+
+                // $(this).parent().siblings().find("input").prop("checked", false);
+                $(this).parent().parent().find("li").removeClass("active_color").addClass("hover");
+                //$(this).parent().siblings().find($(this)).removeClass("active_color");
+                $(this).parent().removeClass("hover").addClass("active_color");
+                //$(this).addClass("active_color").siblings();
+
+
+                var color = $(this).data("id");
+
+
+                //ajax
+                $.ajax({
+                    type: "GET",
+                    url: "/Categories/ColorCategory",
+                    data: { ColorId: color },
+                    success: function (res) {
+                        $(".latestproducts").html(res);
+                    }
+                })
+            })
+        })
+
+    </script>
+}
